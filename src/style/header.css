@@ -1,0 +1,14 @@
+.header {
+  background-color: transparent;
+  height: 30px;
+  width: 100vw;
+  position: fixed;
+  align-items: center;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+  top: 34;
+  left: 51px;
+}
