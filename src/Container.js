@@ -13,7 +13,7 @@ class Container extends React.Component {
           <div className="slogan">
             KING BILLARD PLUS Q’UN JEU, UNE COMMUNAUTE.
           </div>
-          <div className="test">
+          <div className="containerimg">
             <img className="image" src={homepage} alt="homepage" />
           </div>
           <div className="title">QUI SOMMES-NOUS ?</div>
