@@ -5,6 +5,8 @@
   position: fixed;
   align-items: center;
   color: white;
+  justify-content: space-between;
+  padding-top: 15px;
 }
 
 .logo {
@@ -12,6 +14,11 @@
   height: 35px;
   top: 34;
   left: 51px;
+  margin-left: 20px;
+}
+
+.name {
+  margin-left: 10px;
 }
 
 .button {
@@ -21,4 +28,8 @@
   border-style: solid;
   border-width: thin;
   border-color: white;
+}
+
+.identity {
+  align-items: center;
 }

@@ -1,5 +1,12 @@
 .footer {
   background-color: blueviolet;
   width: 100vw;
-  height: 30px;
+  height: 40px;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info {
+  flex-direction: column;
 }
