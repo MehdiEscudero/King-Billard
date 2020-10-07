@@ -5,8 +5,12 @@ import homepage from "./images/homepage.svg";
 class Container extends React.Component {
   render() {
     return (
-      <div className="container">
-        <img className="image" src={homepage} alt="homepage" />
+      <div>
+        <div className="container">
+          <img className="image" src={homepage} alt="homepage" />
+          <div className="title">QUI SOMMES-NOUS ?</div>
+          <div>LES TYPES DE JEUX</div>
+        </div>
       </div>
     );
   }

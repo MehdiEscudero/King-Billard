@@ -3,10 +3,15 @@
   width: 100%;
   border: 1px solid black;
   background: yellow;
+  flex-direction: column;
 }
 
 .image {
-  min-height: 100%;
-  min-width: 100%;
+  min-height: 100vh;
+  min-width: 100vh;
   object-fit: cover;
+}
+
+.title {
+  font-size: xx-large;
 }

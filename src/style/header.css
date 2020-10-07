@@ -4,6 +4,7 @@
   width: 100vw;
   position: fixed;
   align-items: center;
+  color: white;
 }
 
 .logo {
@@ -11,4 +12,13 @@
   height: 35px;
   top: 34;
   left: 51px;
+}
+
+.button {
+  background-color: transparent;
+  color: white;
+  border-radius: 40px;
+  border-style: solid;
+  border-width: thin;
+  border-color: white;
 }

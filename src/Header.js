@@ -7,7 +7,7 @@ class Header extends React.Component {
     return (
       <div className="header">
         <img src={logo} alt="logo" className="logo" />
-        <div className="title">KING BILLARD.</div>
+        <div className="name">KING BILLARD.</div>
         <div>ACCUEIL</div>
         <div>QUI SOMMES-NOUS ?</div>
         <div>LES TYPES DE JEUX</div>
