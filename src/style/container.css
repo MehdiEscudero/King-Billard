@@ -1,7 +1,6 @@
 .container {
   height: 100%;
   width: 100%;
-  border: 1px solid black;
   background: white;
   flex-direction: column;
 }
@@ -26,4 +25,27 @@
   justify-content: center;
   margin-top: 60px;
   margin-bottom: 20px;
+}
+
+.slogan {
+  font-size: 100px;
+  width: 60%;
+  position: absolute;
+  color: white;
+  top: 180px;
+  left: 400px;
+  opacity: 0.8;
+}
+
+.filtre {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.6;
+}
+
+.test {
+  width: 100vw;
+  height: 100vh;
 }

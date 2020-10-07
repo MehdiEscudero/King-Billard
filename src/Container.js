@@ -8,7 +8,14 @@ class Container extends React.Component {
     return (
       <div>
         <div className="container">
-          <img className="image" src={homepage} alt="homepage" />
+          <div className="filtre"></div>
+
+          <div className="slogan">
+            KING BILLARD PLUS Q’UN JEU, UNE COMMUNAUTE.
+          </div>
+          <div className="test">
+            <img className="image" src={homepage} alt="homepage" />
+          </div>
           <div className="title">QUI SOMMES-NOUS ?</div>
           <Section />
           <div className="types">LES TYPES DE JEUX</div>
