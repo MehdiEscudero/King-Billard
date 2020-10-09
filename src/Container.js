@@ -2,9 +2,12 @@ import React from "react";
 import "./style/container.css";
 import homepage from "./images/homepage.svg";
 import Section from "./Section";
+import data from "../src/billards.json";
+
 
 class Container extends React.Component {
   render() {
+
     return (
       <div>
         <div className="container">
@@ -17,7 +20,21 @@ class Container extends React.Component {
             <img className="image" src={homepage} alt="homepage" />
           </div>
           <div className="title">QUI SOMMES-NOUS ?</div>
-          <Section />
+          <div>
+            {data.map((element, index) => {
+              console.log(element)
+              return (
+
+
+                <Section position={index} img={element.img} subtitle={element.subtitle} article={element.article}/>
+              )
+
+            })}
+
+
+          </div>
+         
+
           <div className="types">LES TYPES DE JEUX</div>
         </div>
       </div>
