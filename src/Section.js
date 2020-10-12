@@ -11,9 +11,9 @@ class Section extends React.Component {
 
 
       <div className="section">
-        <img className="corner" src={this.props.img} alt="corner" />
-        <div className="subtitle">{this.props.subtitle}</div>
-        <div className="article">{this.props.article} </div>
+        <img className="corner" src={this.props.element.img} alt="corner" />
+        <div className="subtitle">{this.props.element.subtitle}</div>
+        <div className="article">{this.props.element.article} </div>
       </div>
 
     );

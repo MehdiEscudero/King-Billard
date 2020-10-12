@@ -27,18 +27,12 @@ class Container extends React.Component {
             {data.map((element, index) => {
               console.log(element)
               return (
-
-
-                <Section position={index} img={element.img} subtitle={element.subtitle} article={element.article}/>
+                <Section position={index} element={element}/>
               )
-
-            })}
-
-
-          </div>
+  })}
+ </div>
          
-
-          <div className="types">LES TYPES DE JEUX</div>
+ <div className="types">LES TYPES DE JEUX</div>
           <div className="gamesContainer">
             {content.map((element, index) => {
               return (
