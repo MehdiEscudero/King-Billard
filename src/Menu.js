@@ -1,29 +1,19 @@
 import React from "react";
 
-
-
 class Menu extends React.Component {
-    constructor(props) {
-        super(props)
+  render() {
+    const { handleVisibility, visibility, element } = this.props;
+    const { titre, description, id } = element;
 
-        this.state = {
-            visibility:  false
-        }
-    }
-    
-    handleChange() {
-        this.setState({
-            visibility: true
-        })
-    }
-    render() {
-        return (
-            <div className="gameLeft">
-                <div className="names">{this.props.element.titre}</div>
-                <div className="games">{this.props.element.description}</div>
-                </div>
-        )
-    }
+    return (
+      <div className="gameLeft">
+        <div className="names" onClick={() => handleVisibility(id)}>
+          {titre}
+        </div>
+        <div className="games">{visibility && description}</div>
+      </div>
+    );
+  }
 }
 
 export default Menu;

@@ -7,10 +7,20 @@ import Games from "./Games";
 import Menu from "./Menu";
 import content from "./games.json";
 
-
 class Container extends React.Component {
-  render() {
+  constructor(props) {
+    super(props);
 
+    this.state = {
+      elementVisible: 1,
+    };
+  }
+  // "props, ternaire"
+  handleVisibility(id) {
+    this.setState({ elementVisible: id });
+  }
+
+  render() {
     return (
       <div>
         <div className="container">
@@ -25,26 +35,21 @@ class Container extends React.Component {
           <div className="title">QUI SOMMES-NOUS ?</div>
           <div className="sectionContainer">
             {data.map((element, index) => {
-              console.log(element)
-              return (
-                <Section position={index} element={element}/>
-              )
-  })}
- </div>
-         
- <div className="types">LES TYPES DE JEUX</div>
+              console.log(element);
+              return <Section key={index} element={element} />;
+            })}
+          </div>
+
+          <div className="types">LES TYPES DE JEUX</div>
           <div className="gamesContainer">
             {content.map((element, index) => {
               return (
+                <div key={index}>
+                  <Menu element={element} handleChange={this.handleChange} />
 
-                <div>
-
-                  <Menu position={index} element={element} handleChange={this.handleChange}/>
-  
-                  <Games position={index}  element={element} />
+                  <Games element={element} />
                 </div>
-
-              )
+              );
             })}
           </div>
         </div>
