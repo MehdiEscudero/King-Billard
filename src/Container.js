@@ -39,7 +39,7 @@ class Container extends React.Component {
 
                 <div>
 
-                  <Menu position={index} element={element} />
+                  <Menu position={index} element={element} handleChange={this.handleChange}/>
   
                   <Games position={index}  element={element} />
                 </div>
