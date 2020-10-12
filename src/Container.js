@@ -4,6 +4,7 @@ import homepage from "./images/homepage.svg";
 import Section from "./Section";
 import data from "../src/billards.json";
 import Games from "./Games";
+import Menu from "./Menu";
 import content from "./games.json";
 
 
@@ -38,11 +39,17 @@ class Container extends React.Component {
          
 
           <div className="types">LES TYPES DE JEUX</div>
-          <div>
+          <div className="gamesContainer">
             {content.map((element, index) => {
               return (
 
-                <Games position={index} names={element.titre} games={element.description} paintings={element.pic} paintor={element.photographer} />
+                <div>
+
+                  <Menu position={index} element={element} />
+  
+                  <Games position={index}  element={element} />
+                </div>
+
               )
             })}
           </div>
