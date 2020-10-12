@@ -1,0 +1,13 @@
+.gamesContainer {
+  align-items: center;
+}
+
+.gameLeft {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.gameRight {
+  flex-direction: column;
+  align-items: flex-end;
+}
