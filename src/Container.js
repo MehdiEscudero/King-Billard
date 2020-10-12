@@ -20,7 +20,7 @@ class Container extends React.Component {
             <img className="image" src={homepage} alt="homepage" />
           </div>
           <div className="title">QUI SOMMES-NOUS ?</div>
-          <div>
+          <div className="sectionContainer">
             {data.map((element, index) => {
               console.log(element)
               return (
