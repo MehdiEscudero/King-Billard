@@ -3,6 +3,7 @@ import "./style/container.css";
 import homepage from "./images/homepage.svg";
 import Section from "./Section";
 import data from "../src/billards.json";
+import Games from "./Games";
 
 
 class Container extends React.Component {
@@ -36,6 +37,7 @@ class Container extends React.Component {
          
 
           <div className="types">LES TYPES DE JEUX</div>
+          <Games />
         </div>
       </div>
     );

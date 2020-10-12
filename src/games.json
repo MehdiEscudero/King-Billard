@@ -1,0 +1,25 @@
+[
+    {
+        "titre": "1. Le carambole",
+        "description": "Se joue avec 3 billes ø 61 mm : 1 rouge et 2 blanches dont 1 pointée. La partie libre : Fixer le nombre de points au départ. Placer les billes sur les mouches de départ. Chaque joueur choisit une bille. Pour faire un point et continuer à jouer, le joueur doit “caramboler” les deux autres billes."
+        
+    },
+
+    {
+        "titre": "2. Le billard américain",
+        "description": "Se joue sur une table à 6 poches. Se joue avec 16 billes de ø 57 mm (pleines de 1 à 8 et cerclées au-delà). Principe du jeu de la 8 : Placer les billes numérotées en triangle et définir son camp (bille pleine ou rayée). Empocher dans son camp et terminer par la noire. Principe du jeu de la 9 : Placer les billes numérotées en losange. La blanche doit toucher la boule numérotée la plus basse sur la table, mais les boules n'ont pas à être empochées par ordre numérique. La partie est gagnée lorsque la 9 est empochée."
+        
+    },
+
+    {
+        "titre": "3. Le pool anglais",
+        "description": "Se joue sur une table à 6 poches. Au minimum à 2 joueurs avec 16 billes de ø 50.8 mm : 7 jaunes, 7 rouges, 1 noire n° 8 et 1 blanche. Principe : La première bille empochée détermine la couleur du joueur (jaune ou rouge). Le joueur jaune devra ainsi empocher toutes les billes jaunes et finir par empocher la noire n° 8"
+        
+    },
+
+    {
+        "titre": "4. Le snooker",
+        "description": "Se joue sur une table à 6 poches. Le Snooker se joue avec 22 billes de ø 52 mm : 15 rouges, 1 jaune, 1 verte, 1 brune, 1 bleue, 1 rose, 1 noire, ainsi qu’une bille de choc qui est blanche. Principe : Empocher une bille rouge avec la bille de choc (= 1 point) donne le droit d’empocher alternativement avec les rouges restantes les billes de couleur : jaune = 2 points, verte = 3 points, brune = 4 points, bleue = 5 points, rose = 6 points, noire = 7 points. Les billes de couleur sont remises en jeu jusqu’à épuisement des billes rouges. Ensuite, on vide la table dans l’ordre croissant des billes de couleur."
+        
+    }
+]
