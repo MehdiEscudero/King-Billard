@@ -45,7 +45,10 @@ class Container extends React.Component {
             {content.map((element, index) => {
               return (
                 <div key={index}>
-                  <Menu element={element} handleChange={this.handleChange} />
+                  <Menu
+                    element={element}
+                    handleVisibility={this.handleVisibility}
+                  />
 
                   <Games element={element} />
                 </div>

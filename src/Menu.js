@@ -1,4 +1,5 @@
 import React from "react";
+import "./style/menu.css";
 
 class Menu extends React.Component {
   render() {
@@ -7,9 +8,9 @@ class Menu extends React.Component {
 
     return (
       <div className="gameLeft">
-        <div className="names" onClick={() => handleVisibility(id)}>
+        <button className="names" onClick={() => handleVisibility(id)}>
           {titre}
-        </div>
+        </button>
         <div className="games">{visibility ? description : null}</div>
       </div>
     );

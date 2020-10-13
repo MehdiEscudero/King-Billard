@@ -1,5 +1,5 @@
 .footer {
-  background-color: red;
+  background-color: black;
   width: 100vw;
   height: 20vh;
   color: white;
@@ -9,4 +9,29 @@
 
 .info {
   flex-direction: column;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.place {
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1vh;
+}
+
+.news {
+  flex-direction: row;
+  width: 50vw;
+  height: 50%;
+  margin-right: 10vw;
+}
+
+.inscription {
+  width: 50%;
+}
+
+.attente {
+  background-color: #ea6351;
+  color: white;
+  width: 50%;
 }
