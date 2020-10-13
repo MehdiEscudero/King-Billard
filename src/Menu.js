@@ -10,7 +10,7 @@ class Menu extends React.Component {
         <div className="names" onClick={() => handleVisibility(id)}>
           {titre}
         </div>
-        <div className="games">{visibility && description}</div>
+        <div className="games">{visibility ? description : null}</div>
       </div>
     );
   }
