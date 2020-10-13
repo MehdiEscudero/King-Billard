@@ -28,10 +28,12 @@
 
 .inscription {
   width: 50%;
+  border-radius: 10px 1px 1px 10px;
 }
 
 .attente {
   background-color: #ea6351;
   color: white;
   width: 50%;
+  border-radius: 5px;
 }

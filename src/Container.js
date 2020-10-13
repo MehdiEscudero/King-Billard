@@ -14,8 +14,9 @@ class Container extends React.Component {
     this.state = {
       elementVisible: 1,
     };
+    this.handleVisibility = this.handleVisibility.bind(this);
   }
-  // "props, ternaire"
+
   handleVisibility(id) {
     this.setState({ elementVisible: id });
   }
@@ -48,6 +49,7 @@ class Container extends React.Component {
                   <Menu
                     element={element}
                     handleVisibility={this.handleVisibility}
+                    visibility={this.state.elementVisible === element.key}
                   />
 
                   <Games element={element} />
