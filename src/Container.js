@@ -49,7 +49,7 @@ class Container extends React.Component {
                   <Menu
                     element={element}
                     handleVisibility={this.handleVisibility}
-                    visibility={this.state.elementVisible === element.key}
+                    visibility={this.state.elementVisible === element.id}
                   />
 
                   <Games element={element} />
