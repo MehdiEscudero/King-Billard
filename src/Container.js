@@ -1,6 +1,6 @@
 import React from "react";
 import "./style/container.css";
-import homepage from "./images/homepage.svg";
+import homepage from "./images/moi-snooker.svg";
 import Section from "./Section";
 import data from "../src/billards.json";
 import Games from "./Games";
@@ -52,7 +52,7 @@ class Container extends React.Component {
                     visibility={this.state.elementVisible === element.id}
                   />
 
-                  <Games element={element} />
+                  {/* <Games element={element} /> */}
                 </div>
               );
             })}
