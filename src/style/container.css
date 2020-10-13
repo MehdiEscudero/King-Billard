@@ -49,3 +49,13 @@
   width: 100vw;
   height: 100vh;
 }
+
+.gamesContainer {
+  flex-direction: column;
+  box-sizing: border-box;
+  border-style: none;
+  width: 25%;
+  margin-left: 10vw;
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+}
