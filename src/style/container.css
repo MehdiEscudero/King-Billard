@@ -101,6 +101,6 @@
 .gamesContainer > .gameLeft {
   border-bottom: 0.1px solid grey;
 }
-.gamesContainer:last-child {
+.gamesContainer > .gameLeft:last-child {
   border-bottom: none;
 }

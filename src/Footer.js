@@ -17,7 +17,7 @@ class Footer extends React.Component {
         <div className="button">CONTACT</div>
         <div className="news">
           <input
-            placeholder="Inscrire son e-mail"
+            placeholder="      Inscrire son e-mail"
             className="inscription"
           ></input>
           <button className="attente">M'INSCRIRE SUR LA LISTE D'ATTENTE</button>

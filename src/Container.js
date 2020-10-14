@@ -37,7 +37,7 @@ class Container extends React.Component {
           </div>
           <div className="hook">
             <input
-              placeholder="Inscrire son e-mail"
+              placeholder="      Inscrire son e-mail"
               className="inscription"
             ></input>
             <button className="attente">
