@@ -35,7 +35,7 @@
   height: 40%;
   position: absolute;
   color: white;
-  top: 31vh;
+  top: 30vh;
   left: 20vw;
 }
 
@@ -96,8 +96,4 @@
 
 .bloc {
   flex-direction: row;
-}
-
-.item {
-  border: 1px solid blue;
 }

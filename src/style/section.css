@@ -4,6 +4,8 @@
 
 .section {
   box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 1vh black;
   width: 25%;
   flex-direction: column;
   border-style: solid;

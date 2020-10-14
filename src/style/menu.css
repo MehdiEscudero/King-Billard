@@ -2,7 +2,13 @@
   border: none;
   cursor: pointer;
   background-color: white;
-  font-size: 16px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3vh;
   font-weight: 700;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.games {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
