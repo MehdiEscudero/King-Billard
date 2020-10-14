@@ -59,3 +59,15 @@
   margin-top: 10vh;
   margin-bottom: 20vh;
 }
+
+.hook {
+  position: absolute;
+  top: 85vh;
+  left: 28vw;
+}
+
+.vector {
+  position: absolute;
+  top: 94vh;
+  left: 48vw;
+}

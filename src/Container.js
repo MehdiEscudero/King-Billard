@@ -1,11 +1,12 @@
 import React from "react";
 import "./style/container.css";
-import homepage from "./images/moi-snooker.svg";
+import homepage from "./images/homepage.svg";
 import Section from "./Section";
 import data from "../src/billards.json";
 import Games from "./Games";
 import Menu from "./Menu";
 import content from "./games.json";
+import vector from "./images/vector.svg";
 
 class Container extends React.Component {
   constructor(props) {
@@ -30,6 +31,16 @@ class Container extends React.Component {
           <div className="slogan">
             KING BILLARD PLUS Q’UN JEU, UNE COMMUNAUTE.
           </div>
+          <div className="hook">
+            <input
+              placeholder="Inscrire son e-mail"
+              className="inscription"
+            ></input>
+            <button className="attente">
+              M'INSCRIRE SUR LA LISTE D'ATTENTE
+            </button>
+          </div>
+          <img src={vector} alt="vector" className="vector" />
           <div className="containerimg">
             <img className="image" src={homepage} alt="homepage" />
           </div>
@@ -52,7 +63,7 @@ class Container extends React.Component {
                     visibility={this.state.elementVisible === element.id}
                   />
 
-                  {/* <Games element={element} /> */}
+                  <Games element={element} />
                 </div>
               );
             })}
