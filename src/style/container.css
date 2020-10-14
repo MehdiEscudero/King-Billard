@@ -28,13 +28,14 @@
 }
 
 .slogan {
+  flex-direction: column;
   font-size: 100px;
-  width: 60%;
+  width: 69%;
+  height: 40%;
   position: absolute;
   color: white;
-  top: 180px;
-  left: 400px;
-  opacity: 0.8;
+  top: 35vh;
+  left: 20vw;
 }
 
 .filtre {
@@ -64,10 +65,30 @@
   position: absolute;
   top: 85vh;
   left: 28vw;
+  width: 50vw;
+  height: 8vh;
 }
 
 .vector {
   position: absolute;
-  top: 94vh;
+  top: 93vh;
   left: 48vw;
+}
+
+.vectorLeft {
+  position: absolute;
+  top: 49vh;
+  left: 3vw;
+}
+
+.vectorRight {
+  position: absolute;
+  top: 49vh;
+  right: 3vw;
+}
+
+.king {
+  justify-content: flex-end;
+  font-size: 90%;
+  font-weight: 600;
 }

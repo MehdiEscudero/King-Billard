@@ -25,10 +25,12 @@
 .button {
   background-color: transparent;
   color: white;
+  font-weight: 700;
   border-radius: 40px;
   border-style: solid;
   border-width: thin;
   border-color: white;
+  padding: 1vh 1.7vw 1vh 1.7vw;
 }
 
 .identity {
@@ -38,4 +40,10 @@
 .onglet {
   justify-content: space-around;
   width: 50vw;
+  align-items: center;
+}
+
+.tab {
+  font-size: large;
+  font-weight: 700;
 }

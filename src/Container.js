@@ -7,6 +7,8 @@ import Games from "./Games";
 import Menu from "./Menu";
 import content from "./games.json";
 import vector from "./images/vector.svg";
+import vectorLeft from "./images/vectorLeft.svg";
+import vectorRight from "./images/vectorRight.svg";
 
 class Container extends React.Component {
   constructor(props) {
@@ -29,7 +31,9 @@ class Container extends React.Component {
           <div className="filtre"></div>
 
           <div className="slogan">
-            KING BILLARD PLUS Q’UN JEU, UNE COMMUNAUTE.
+            <div className="king">KING BILLARD</div>
+            <div className="king">PLUS Q’UN JEU,</div>
+            <div className="king">UNE COMMUNAUTE.</div>
           </div>
           <div className="hook">
             <input
@@ -41,6 +45,9 @@ class Container extends React.Component {
             </button>
           </div>
           <img src={vector} alt="vector" className="vector" />
+          <img src={vectorLeft} alt="vectorLeft" className="vectorLeft" />
+          <img src={vectorRight} alt="vectorRight" className="vectorRight" />
+
           <div className="containerimg">
             <img className="image" src={homepage} alt="homepage" />
           </div>

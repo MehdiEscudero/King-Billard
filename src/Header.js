@@ -11,9 +11,9 @@ class Header extends React.Component {
           <div className="name">KING BILLARD.</div>
         </div>
         <div className="onglet">
-          <div>ACCUEIL</div>
-          <div>QUI SOMMES-NOUS ?</div>
-          <div>LES TYPES DE JEUX</div>
+          <div className="tab">ACCUEIL</div>
+          <div className="tab">QUI SOMMES-NOUS ?</div>
+          <div className="tab">LES TYPES DE JEUX</div>
           <button className="button">CONTACT</button>
         </div>
       </div>
