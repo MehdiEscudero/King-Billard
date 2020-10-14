@@ -97,3 +97,10 @@
 .bloc {
   flex-direction: row;
 }
+
+.gamesContainer > .gameLeft {
+  border-bottom: 0.1px solid grey;
+}
+.gamesContainer:last-child {
+  border-bottom: none;
+}

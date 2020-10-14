@@ -64,13 +64,12 @@ class Container extends React.Component {
             <div className="gamesContainer">
               {content.map((element, index) => {
                 return (
-                  <div className="item" key={index}>
-                    <Menu
-                      element={element}
-                      handleVisibility={this.handleVisibility}
-                      visibility={this.state.elementVisible === element.id}
-                    />
-                  </div>
+                  <Menu
+                    key={index}
+                    element={element}
+                    handleVisibility={this.handleVisibility}
+                    visibility={this.state.elementVisible === element.id}
+                  />
                 );
               })}
             </div>
