@@ -28,13 +28,14 @@
 }
 
 .slogan {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   flex-direction: column;
-  font-size: 100px;
+  font-size: 16vh;
   width: 69%;
   height: 40%;
   position: absolute;
   color: white;
-  top: 35vh;
+  top: 31vh;
   left: 20vw;
 }
 
@@ -63,8 +64,8 @@
 
 .hook {
   position: absolute;
-  top: 85vh;
-  left: 28vw;
+  top: 81vh;
+  left: 27vw;
   width: 50vw;
   height: 8vh;
 }
@@ -91,4 +92,12 @@
   justify-content: flex-end;
   font-size: 90%;
   font-weight: 600;
+}
+
+.bloc {
+  flex-direction: row;
+}
+
+.item {
+  border: 1px solid blue;
 }

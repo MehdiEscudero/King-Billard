@@ -60,20 +60,21 @@ class Container extends React.Component {
           </div>
 
           <div className="types">LES TYPES DE JEUX</div>
-          <div className="gamesContainer">
-            {content.map((element, index) => {
-              return (
-                <div key={index}>
-                  <Menu
-                    element={element}
-                    handleVisibility={this.handleVisibility}
-                    visibility={this.state.elementVisible === element.id}
-                  />
-
-                  <Games element={element} />
-                </div>
-              );
-            })}
+          <div>
+            <div className="gamesContainer">
+              {content.map((element, index) => {
+                return (
+                  <div className="item" key={index}>
+                    <Menu
+                      element={element}
+                      handleVisibility={this.handleVisibility}
+                      visibility={this.state.elementVisible === element.id}
+                    />
+                  </div>
+                );
+              })}
+            </div>
+            <Games element={content[this.state.elementVisible]} />
           </div>
         </div>
       </div>
