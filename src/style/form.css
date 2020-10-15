@@ -1,0 +1,34 @@
+.form {
+  height: 85vh;
+  width: 35vw;
+  position: absolute;
+  flex-direction: column;
+  color: lightgray;
+  background-color: white;
+  left: 35vw;
+  top: 5vh;
+  z-index: 1;
+}
+
+.top {
+  height: 8vh;
+  background-color: #5157ea;
+  color: white;
+  align-items: center;
+}
+
+.send {
+  border-radius: 20px;
+  margin-bottom: 2vh;
+  width: 15vw;
+  margin-top: 2vh;
+  align-self: center;
+}
+
+.details {
+  flex-direction: column;
+  color: grey;
+  justify-content: space-between;
+
+  flex: 1;
+}

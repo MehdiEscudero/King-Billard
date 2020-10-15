@@ -9,6 +9,7 @@ import content from "./games.json";
 import vector from "./images/vector.svg";
 import vectorLeft from "./images/vectorLeft.svg";
 import vectorRight from "./images/vectorRight.svg";
+import Form from "./Form";
 
 class Container extends React.Component {
   constructor(props) {
@@ -35,6 +36,7 @@ class Container extends React.Component {
             <div className="king">PLUS Q’UN JEU,</div>
             <div className="king">UNE COMMUNAUTE.</div>
           </div>
+          <Form />
           <div className="hook">
             <input
               placeholder="      Inscrire son e-mail"
