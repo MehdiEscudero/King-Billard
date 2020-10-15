@@ -14,7 +14,9 @@ class Header extends React.Component {
           <div className="tab">ACCUEIL</div>
           <div className="tab">QUI SOMMES-NOUS ?</div>
           <div className="tab">LES TYPES DE JEUX</div>
-          <button className="button">CONTACT</button>
+          <button onClick={() => this.props.handleModal()} className="button">
+            CONTACT
+          </button>
         </div>
       </div>
     );

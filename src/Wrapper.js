@@ -5,10 +5,25 @@ import Footer from "./Footer";
 import Container from "./Container";
 
 class Wrapper extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      modal: false,
+    };
+    this.handleModal = this.handleModal.bind(this);
+  }
+
+  handleModal() {
+    this.setState({
+      modal: !this.state.modal,
+    });
+  }
+
   render() {
     return (
       <div className="wrapper">
-        <Header />
+        <Header handleModal={this.handleModal} />
         <Container />
         <Footer />
       </div>

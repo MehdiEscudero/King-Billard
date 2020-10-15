@@ -36,7 +36,7 @@ class Container extends React.Component {
             <div className="king">PLUS Q’UN JEU,</div>
             <div className="king">UNE COMMUNAUTE.</div>
           </div>
-          <Form />
+          <Form salut="mehdi" />
           <div className="hook">
             <input
               placeholder="      Inscrire son e-mail"

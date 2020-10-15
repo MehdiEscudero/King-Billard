@@ -15,6 +15,7 @@
   background-color: #5157ea;
   color: white;
   align-items: center;
+  justify-content: center;
 }
 
 .send {
@@ -29,6 +30,7 @@
   flex-direction: column;
   color: grey;
   justify-content: space-between;
-
+  width: 80%;
   flex: 1;
+  margin-left: 3vw;
 }
