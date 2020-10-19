@@ -3,12 +3,13 @@ import "./style/form.css";
 
 class Form extends React.Component {
   render() {
-    console.log(this.props);
     return (
       <div className="form">
         <div className="top">
-          <div>Nous contacter</div>
-          <button onClick={() => this.props.handleModal()}>X</button>
+          <div className="contacter">Nous contacter</div>
+          <button onClick={() => this.props.handleModal()} className="croix">
+            X
+          </button>
         </div>
         <div className="details">
           <div>Nom</div>

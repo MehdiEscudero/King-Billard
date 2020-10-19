@@ -28,7 +28,14 @@ class Container extends React.Component {
   render() {
     return (
       <div>
-        <div className="container">
+        <div
+          onClick={(event) => {
+            if (this.props.modal) {
+              this.props.handleModal();
+            }
+          }}
+          className="container"
+        >
           <div className="filtre"></div>
 
           <div className="slogan">
@@ -36,7 +43,9 @@ class Container extends React.Component {
             <div className="king">PLUS Q’UN JEU,</div>
             <div className="king">UNE COMMUNAUTE.</div>
           </div>
-          <Form salut="mehdi" />
+          {this.props.modal ? (
+            <Form handleModal={this.props.handleModal} />
+          ) : null}
           <div className="hook">
             <input
               placeholder="      Inscrire son e-mail"
@@ -56,7 +65,6 @@ class Container extends React.Component {
           <div className="title">QUI SOMMES-NOUS ?</div>
           <div className="sectionContainer">
             {data.map((element, index) => {
-              console.log(element);
               return <Section key={index} element={element} />;
             })}
           </div>

@@ -15,7 +15,16 @@
   background-color: #5157ea;
   color: white;
   align-items: center;
-  justify-content: center;
+}
+
+.contacter {
+  justify-self: center;
+}
+
+.croix {
+  border: none;
+  color: white;
+  background: none;
 }
 
 .send {

@@ -15,16 +15,16 @@ class Wrapper extends React.Component {
   }
 
   handleModal() {
+    console.log("YOOO");
     this.setState({
       modal: !this.state.modal,
     });
   }
-
   render() {
     return (
       <div className="wrapper">
         <Header handleModal={this.handleModal} />
-        <Container />
+        <Container handleModal={this.handleModal} modal={this.state.modal} />
         <Footer />
       </div>
     );
