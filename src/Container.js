@@ -28,14 +28,7 @@ class Container extends React.Component {
   render() {
     return (
       <div>
-        <div
-          onClick={(event) => {
-            if (this.props.modal) {
-              this.props.handleModal();
-            }
-          }}
-          className="container"
-        >
+        <div className="container">
           <div className="filtre"></div>
 
           <div className="slogan">
