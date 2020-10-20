@@ -16,6 +16,7 @@
   top: 34;
   left: 51px;
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .name {
@@ -31,6 +32,7 @@
   border-width: thin;
   border-color: white;
   padding: 1vh 1.7vw 1vh 1.7vw;
+  cursor: pointer;
 }
 
 .identity {
@@ -46,4 +48,5 @@
 .tab {
   font-size: large;
   font-weight: 700;
+  cursor: pointer;
 }

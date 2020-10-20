@@ -37,3 +37,7 @@
   width: 50%;
   border-radius: 5px;
 }
+
+.logoBottom {
+  cursor: pointer;
+}
