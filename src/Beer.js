@@ -1,6 +1,7 @@
 import React from "react";
 import beer from "./images/beer.svg";
 import jean from "./images/jean.svg";
+import logo from "./images/logo.svg";
 
 class Beer extends React.Component {
   render() {

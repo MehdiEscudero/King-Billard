@@ -1,6 +1,7 @@
 import React from "react";
 import corner from "./images/corner.svg";
 import jean from "./images/jean.svg";
+import logo from "./images/logo.svg";
 import "./style/corner.css";
 
 class Corner extends React.Component {

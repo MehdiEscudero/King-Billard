@@ -24,7 +24,7 @@ class Wrapper extends React.Component {
     return (
       <div className="wrapper">
         <Header handleModal={this.handleModal} />
-        <Container handleModal={this.handleModal} modal={this.state.modal} />
+        <Container modal={this.state.modal} handleModal={this.handleModal} />
         <Footer />
       </div>
     );

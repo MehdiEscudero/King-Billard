@@ -1,6 +1,7 @@
 import React from "react";
 import fratrie from "./images/fratrie.svg";
 import jean from "./images/jean.svg";
+import logo from "./images/logo.svg";
 
 class Fratrie extends React.Component {
   render() {
