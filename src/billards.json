@@ -1,18 +1,21 @@
 [
 
   {
+    "path": "corner",
     "img": "../pictures/corner.svg",
     "subtitle": "Des passionnés du billard sous toutes ses formes",
     "article": "Nous jouons au billard d'américain, français et même vietnamien"
   },
 
   {
+    "path": "beer",
     "img": "../pictures/beer.svg",
     "subtitle": "Des amateurs de mousses fraiches",
     "article": "La vie ne vaut pas vraiment la peine d'être vécue sans une pinte fraiche"
   },
 
   {
+    "path": "fratrie",
     "img": "../pictures/fratrie.svg",
     "subtitle": "Une fraternité de joyeux rigolards",
     "article": "Venez découvrir nos légendaires afterparties et nos séminaires de bill  rd à l'étranger"
