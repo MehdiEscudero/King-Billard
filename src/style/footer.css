@@ -11,6 +11,7 @@
   flex-direction: column;
   padding-top: 3vh;
   padding-bottom: 3vh;
+  margin-left: 2vw;
 }
 
 .place {
@@ -40,4 +41,8 @@
 
 .logoBottom {
   cursor: pointer;
+}
+
+.address {
+  margin-top: 1vh;
 }

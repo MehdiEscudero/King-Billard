@@ -55,14 +55,16 @@ class Container extends React.Component {
           <div className="containerimg">
             <img className="image" src={homepage} alt="homepage" />
           </div>
-          <div className="title">QUI SOMMES-NOUS ?</div>
-          <div className="sectionContainer">
-            {data.map((element, index) => {
-              return <Section key={index} element={element} />;
-            })}
-          </div>
+          <div className="bloc">
+            <div className="title">QUI SOMMES-NOUS ?</div>
+            <div className="sectionContainer">
+              {data.map((element, index) => {
+                return <Section key={index} element={element} />;
+              })}
+            </div>
 
-          <div className="types">LES TYPES DE JEUX</div>
+            <div className="types">LES TYPES DE JEUX</div>
+          </div>
           <div>
             <div className="gamesContainer">
               {content.map((element, index) => {
