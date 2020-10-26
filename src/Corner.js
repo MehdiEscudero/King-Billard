@@ -8,7 +8,7 @@ class Corner extends React.Component {
   render() {
     return (
       <div className="pageUne">
-        <div className="header">
+        <div className="headerCorner">
           <div className="identity">
             <img src={logo} alt="logo" className="logo" />
             <div className="name">KING BILLARD.</div>
@@ -20,8 +20,8 @@ class Corner extends React.Component {
             <button className="button">CONTACT</button>
           </div>
         </div>
-        <div className="article">
-          <img src={corner} alt="corner" />
+        <div className="fullArticle">
+          <img className="imgCorner" src={corner} alt="corner" />
           <h3>Des passionnés du billard sous toutes ses formes</h3>
           <span>
             <img src={jean} alt="avatar" />

@@ -2,6 +2,32 @@ import React from "react";
 import "./style/form.css";
 
 class Form extends React.Component {
+  state = {
+    nom: null,
+    email: null,
+    téléphone: null,
+    message: null,
+  };
+
+  handleChange(event, state) {
+    this.setState({
+      [state]: event.target.value,
+    });
+  }
+
+  handleSubmit(event) {
+    console.log("ici");
+    console.log(this.state);
+    alert(
+      this.state.nom +
+        "  " +
+        this.state.email +
+        "  " +
+        this.state.téléphone +
+        "  " +
+        this.state.message
+    );
+  }
   render() {
     return (
       <div className="formWrapper">
@@ -14,16 +40,36 @@ class Form extends React.Component {
             </button>
           </div>
           <div className="details">
-            <div>Nom</div>
-            <input></input>
-            <div>Email</div>
-            <input></input>
-            <div>Téléphone</div>
-            <input></input>
-            <div>Message</div>
-            <textarea></textarea>
+            <div className="names">Nom</div>
+            <input
+              onChange={(event) => this.handleChange(event, "nom")}
+            ></input>
+            <div className="names">Email</div>
+            <input
+              onChange={(event) => this.handleChange(event, "email")}
+            ></input>
+            <div className="names">Téléphone</div>
+            <input
+              onChange={(event) => this.handleChange(event, "téléphone")}
+            ></input>
+            <div className="names">Message</div>
+            <textarea
+              onChange={(event) => this.handleChange(event, "message")}
+            ></textarea>
           </div>
-          <button className="send">Envoyer</button>
+          <button
+            disabled={
+              !this.state.player ||
+              !this.state.billard ||
+              !this.state.pseudo ||
+              !this.state.email ||
+              !this.state.comment
+            }
+            onClick={(event) => this.handleSubmit(event)}
+            className="send"
+          >
+            Envoyer
+          </button>
         </div>
       </div>
     );
