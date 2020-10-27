@@ -1,9 +1,9 @@
 import React from "react";
-import Wrapper from "./Wrapper";
 import Corner from "./Corner";
 import Beer from "./Beer";
 import Fratrie from "./Fratrie";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Container from "./Container";
 
 class App extends React.Component {
   render() {
@@ -20,7 +20,7 @@ class App extends React.Component {
             <Fratrie />
           </Route>
           <Route path="/">
-            <Wrapper />
+            <Container />
           </Route>
         </Switch>
       </Router>

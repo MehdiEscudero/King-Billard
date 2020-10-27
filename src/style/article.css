@@ -1,0 +1,66 @@
+.fullArticle {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.title-article {
+  text-align: left;
+  width: 670px;
+  height: 92px;
+  left: 409px;
+  top: 515px;
+
+  font-family: Libre Franklin;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+
+  color: #000000;
+}
+
+.authorName {
+  font-family: Libre Franklin;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #000000;
+  margin-left: 20px;
+}
+
+.content {
+  width: 50%;
+  flex-direction: column;
+}
+
+.sub-content {
+  width: 50%;
+  flex-direction: column;
+  padding: 0px 30px;
+}
+
+.imgArticle {
+  height: 378px;
+  width: 100%;
+}
+
+.text {
+  text-align: left;
+  width: 598px;
+  height: 304px;
+  left: 409px;
+  top: 688px;
+
+  font-family: Libre Franklin;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #000000;
+
+  opacity: 0.5;
+}

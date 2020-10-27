@@ -117,3 +117,7 @@
   height: 100vh;
   width: 100vw;
 }
+
+.sectionContainer {
+  justify-content: space-around;
+}

@@ -2,7 +2,7 @@ import React from "react";
 import "./style/wrapper.css";
 import Header from "./Header";
 import Footer from "./Footer";
-import Container from "./Container";
+import Form from "./Form";
 
 class Wrapper extends React.Component {
   constructor(props) {
@@ -15,7 +15,6 @@ class Wrapper extends React.Component {
   }
 
   handleModal() {
-    console.log("YOOO");
     this.setState({
       modal: !this.state.modal,
     });
@@ -24,8 +23,10 @@ class Wrapper extends React.Component {
     return (
       <div className="wrapper">
         <Header handleModal={this.handleModal} />
-        <Container modal={this.state.modal} handleModal={this.handleModal} />
-        <Footer />
+        {this.state.modal ? <Form handleModal={this.handleModal} /> : null}
+        <div className="child">{this.props.children}</div>
+        {/* <Container /> */}
+        <Footer handleModal={this.handleModal} />
       </div>
     );
   }

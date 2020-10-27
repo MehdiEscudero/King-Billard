@@ -1,12 +1,10 @@
 .header {
-  background-color: transparent;
-  height: 2vh;
+  background-color: black;
   width: 100vw;
-  position: fixed;
   align-items: center;
   color: white;
   justify-content: space-between;
-  padding-top: 15px;
+  padding: 15px 0px;
   z-index: 1;
 }
 
@@ -16,7 +14,6 @@
   top: 34;
   left: 51px;
   margin-left: 2vw;
-  cursor: pointer;
 }
 
 .name {
@@ -49,4 +46,8 @@
   font-size: large;
   font-weight: 700;
   cursor: pointer;
+}
+
+.child {
+  flex: 1;
 }

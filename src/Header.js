@@ -1,18 +1,22 @@
 import React from "react";
 import "./style/header.css";
 import logo from "./images/logo.svg";
+import { Link } from "react-router-dom";
 
 class Header extends React.Component {
   render() {
-    console.log(this.props);
     return (
       <div className="header">
-        <div className="identity">
-          <img src={logo} alt="logo" className="logo" />
-          <div className="name">KING BILLARD.</div>
-        </div>
+        <Link to="/">
+          <div className="identity">
+            <img src={logo} alt="logo" className="logo" />
+            <div className="name">KING BILLARD.</div>
+          </div>
+        </Link>
         <div className="onglet">
-          <div className="tab">ACCUEIL</div>
+          <Link to="/">
+            <div className="tab">ACCUEIL</div>
+          </Link>
           <div className="tab">QUI SOMMES-NOUS ?</div>
           <div className="tab">LES TYPES DE JEUX</div>
           <button onClick={() => this.props.handleModal()} className="button">

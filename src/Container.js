@@ -9,7 +9,7 @@ import content from "./games.json";
 import vector from "./images/vector.svg";
 import vectorLeft from "./images/vectorLeft.svg";
 import vectorRight from "./images/vectorRight.svg";
-import Form from "./Form";
+import Wrapper from "./Wrapper";
 
 class Container extends React.Component {
   constructor(props) {
@@ -27,7 +27,7 @@ class Container extends React.Component {
 
   render() {
     return (
-      <div>
+      <Wrapper>
         <div className="container">
           <div className="filtre"></div>
 
@@ -36,9 +36,7 @@ class Container extends React.Component {
             <div className="king">PLUS Q’UN JEU,</div>
             <div className="king">UNE COMMUNAUTE.</div>
           </div>
-          {this.props.modal ? (
-            <Form handleModal={this.props.handleModal} />
-          ) : null}
+
           <div className="hook">
             <input
               placeholder="      Inscrire son e-mail"
@@ -81,7 +79,7 @@ class Container extends React.Component {
             <Games element={content[this.state.elementVisible]} />
           </div>
         </div>
-      </div>
+      </Wrapper>
     );
   }
 }
