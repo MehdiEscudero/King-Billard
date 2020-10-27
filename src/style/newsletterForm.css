@@ -1,0 +1,9 @@
+.news {
+  flex-direction: row;
+  width: 50%;
+  height: 65px;
+}
+.news > input,
+.news > button {
+  border: 0px solid black;
+}

@@ -9,11 +9,11 @@ class Header extends React.Component {
       <div className="header">
         <Link to="/">
           <div className="identity">
-            <img src={logo} alt="logo" className="logo" />
+            <img src={logo} alt="logo" className="logo zindex" />
             <div className="name">KING BILLARD.</div>
           </div>
         </Link>
-        <div className="onglet">
+        <div className="onglet zindex">
           <Link to="/">
             <div className="tab">ACCUEIL</div>
           </Link>

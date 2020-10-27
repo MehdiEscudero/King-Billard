@@ -1,8 +1,8 @@
 import React from "react";
-import "./style/container.css";
+import "./style/main.css";
 import homepage from "./images/homepage.svg";
 import Section from "./Section";
-import data from "../src/billards.json";
+import data from "./billards.json";
 import Games from "./Games";
 import Menu from "./Menu";
 import content from "./games.json";
@@ -10,6 +10,7 @@ import vector from "./images/vector.svg";
 import vectorLeft from "./images/vectorLeft.svg";
 import vectorRight from "./images/vectorRight.svg";
 import Wrapper from "./Wrapper";
+import NewsletterForm from "./NewsletterForm";
 
 class Container extends React.Component {
   constructor(props) {
@@ -34,18 +35,14 @@ class Container extends React.Component {
           <div className="slogan">
             <div className="king">KING BILLARD</div>
             <div className="king">PLUS Q’UN JEU,</div>
-            <div className="king">UNE COMMUNAUTE.</div>
+            <div style={{ marginBottom: 50 }} className="king">
+              UNE COMMUNAUTE.
+            </div>
+            {/* <div className="hook"> */}
+            <NewsletterForm />
+            {/* </div> */}
           </div>
 
-          <div className="hook">
-            <input
-              placeholder="Inscrire son e-mail"
-              className="inscription"
-            ></input>
-            <button className="attente">
-              M'INSCRIRE SUR LA LISTE D'ATTENTE
-            </button>
-          </div>
           <img src={vector} alt="vector" className="vector" />
           <img src={vectorLeft} alt="vectorLeft" className="vectorLeft" />
           <img src={vectorRight} alt="vectorRight" className="vectorRight" />

@@ -3,7 +3,7 @@ import Corner from "./Corner";
 import Beer from "./Beer";
 import Fratrie from "./Fratrie";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Container from "./Container";
+import Main from "./Main";
 
 class App extends React.Component {
   render() {
@@ -20,7 +20,7 @@ class App extends React.Component {
             <Fratrie />
           </Route>
           <Route path="/">
-            <Container />
+            <Main />
           </Route>
         </Switch>
       </Router>

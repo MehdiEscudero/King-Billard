@@ -1,6 +1,7 @@
 import React from "react";
 import "./style/footer.css";
 import logo from "./images/logo.svg";
+import NewsletterForm from "./NewsletterForm";
 
 class Footer extends React.Component {
   render() {
@@ -18,15 +19,7 @@ class Footer extends React.Component {
           <button onClick={() => this.props.handleModal()} className="button">
             CONTACT
           </button>
-          <div className="news">
-            <input
-              placeholder="Inscrire son e-mail"
-              className="inscription"
-            ></input>
-            <button className="attente">
-              M'INSCRIRE SUR LA LISTE D'ATTENTE
-            </button>
-          </div>
+          <NewsletterForm />
         </div>
       </div>
     );
