@@ -5,7 +5,7 @@ class Form extends React.Component {
   state = {
     nom: null,
     email: null,
-    téléphone: null,
+    phoneNumber: null,
     message: null,
   };
 
@@ -23,7 +23,7 @@ class Form extends React.Component {
         "  " +
         this.state.email +
         "  " +
-        this.state.téléphone +
+        this.state.phoneNumber +
         "  " +
         this.state.message
     );
@@ -34,36 +34,39 @@ class Form extends React.Component {
         <div onClick={() => this.props.handleModal()} className="fond"></div>
         <div className="form">
           <div className="top">
-            <div className="contacter">Nous contacter</div>
-            <button onClick={() => this.props.handleModal()} className="croix">
+            <div style={{ width: "100%" }}>
+              <span style={{ textAlign: "center", width: "100%" }}>
+                Nous contacter
+              </span>
+            </div>
+            <button className="close" onClick={() => this.props.handleModal()}>
               X
             </button>
           </div>
           <div className="details">
-            <div className="names">Nom</div>
+            <div className="label">Nom</div>
             <input
               onChange={(event) => this.handleChange(event, "nom")}
             ></input>
-            <div className="names">Email</div>
+            <div className="label">Email</div>
             <input
               onChange={(event) => this.handleChange(event, "email")}
             ></input>
-            <div className="names">Téléphone</div>
+            <div className="label">Téléphone</div>
             <input
-              onChange={(event) => this.handleChange(event, "téléphone")}
+              onChange={(event) => this.handleChange(event, "phoneNumber")}
             ></input>
-            <div className="names">Message</div>
+            <div className="label">Message</div>
             <textarea
               onChange={(event) => this.handleChange(event, "message")}
             ></textarea>
           </div>
           <button
             disabled={
-              !this.state.player ||
-              !this.state.billard ||
-              !this.state.pseudo ||
+              !this.state.nom ||
               !this.state.email ||
-              !this.state.comment
+              !this.state.phoneNumber ||
+              !this.state.message
             }
             onClick={(event) => this.handleSubmit(event)}
             className="send"

@@ -2,6 +2,12 @@
   flex-direction: row;
   width: 50%;
   height: 65px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.news > input {
+  margin: auto;
 }
 .news > input,
 .news > button {
