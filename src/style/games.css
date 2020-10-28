@@ -9,3 +9,13 @@
   margin-left: 10vw;
   margin-top: 10vh;
 }
+
+.paintings {
+  width: 720px;
+  height: 460px;
+  object-fit: cover;
+}
+
+.paintor {
+  margin-top: 1vh;
+}

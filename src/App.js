@@ -1,9 +1,8 @@
 import React from "react";
-import Corner from "./Corner";
-import Beer from "./Beer";
-import Fratrie from "./Fratrie";
+import Article from "./Article";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Main from "./Main";
+import data from "./billards.json";
 
 class App extends React.Component {
   render() {
@@ -11,13 +10,13 @@ class App extends React.Component {
       <Router>
         <Switch>
           <Route path="/corner">
-            <Corner />
+            <Article element={data[0]} />
           </Route>
           <Route path="/beer">
-            <Beer />
+            <Article element={data[1]} />
           </Route>
           <Route path="/fratrie">
-            <Fratrie />
+            <Article element={data[2]} />
           </Route>
           <Route path="/">
             <Main />

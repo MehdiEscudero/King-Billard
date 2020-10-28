@@ -4,20 +4,29 @@
     "path": "corner",
     "img": "../pictures/corner.svg",
     "subtitle": "Des passionnés du billard sous toutes ses formes",
-    "article": "Nous jouons au billard d'américain, français et même vietnamien"
+    "avatar": "../pictures/jean.svg",
+    "author": "Jean Lassale",
+    "article": "Nous jouons au billard d'américain, français et même vietnamien",
+    "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum <br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
   },
 
   {
     "path": "beer",
     "img": "../pictures/beer.svg",
     "subtitle": "Des amateurs de mousses fraiches",
-    "article": "La vie ne vaut pas vraiment la peine d'être vécue sans une pinte fraiche"
+    "avatar": "../pictures/jean.svg",
+    "author": "Jean Lassale",
+    "article": "La vie ne vaut pas vraiment la peine d'être vécue sans une pinte fraiche",
+    "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum <br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
   },
 
   {
     "path": "fratrie",
     "img": "../pictures/fratrie.svg",
     "subtitle": "Une fraternité de joyeux rigolards",
-    "article": "Venez découvrir nos légendaires afterparties et nos séminaires de bill  rd à l'étranger"
+    "avatar": "../pictures/jean.svg",
+    "author": "Jean Lassale",
+    "article": "Venez découvrir nos légendaires afterparties et nos séminaires de bill  rd à l'étranger",
+    "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum <br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
   }
 ]
