@@ -1,11 +1,12 @@
 .header {
-  background-color: black;
+  background-color: transparent;
   width: 100vw;
   align-items: center;
   color: white;
   justify-content: space-between;
   padding: 15px 0px;
   z-index: 1;
+  position: absolute;
 }
 
 .logo {

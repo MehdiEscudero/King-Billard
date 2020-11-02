@@ -21,7 +21,7 @@ class Wrapper extends React.Component {
   }
   render() {
     return (
-      <div className="wrapper">
+      <div className={this.state.modal ? "wrapper no-overflow" : "wrapper"}>
         {this.state.modal ? <Form handleModal={this.handleModal} /> : null}
         <Header handleModal={this.handleModal} />
         <div className="child">{this.props.children}</div>
