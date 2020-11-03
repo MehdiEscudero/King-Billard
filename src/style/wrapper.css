@@ -4,9 +4,14 @@
   background-color: #fafafa;
   flex-direction: column;
   justify-content: space-between;
+  overflow: scroll;
 }
 
-.no-overflow {
+/* .no-overflow {
+  overflow: hidden;
+} */
+
+.wrapperContainer {
   overflow: hidden;
 }
 
