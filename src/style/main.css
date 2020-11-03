@@ -3,6 +3,7 @@
   width: 100%;
   background: white;
   flex-direction: column;
+  position: relative;
 }
 
 .image {
@@ -40,11 +41,11 @@
 }
 
 .filtre {
-  position: relative;
+  position: absolute;
   width: 100vw;
   height: 100vh;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .containerimg {
