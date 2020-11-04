@@ -25,7 +25,7 @@ class Wrapper extends React.Component {
         {this.state.modal ? <Form handleModal={this.handleModal} /> : null}
         <div className="wrapper">
           <Header handleModal={this.handleModal} />
-          <div className="child">{this.props.children}</div>
+          {this.props.children}
           <Footer handleModal={this.handleModal} />
         </div>
       </div>

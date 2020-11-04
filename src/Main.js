@@ -30,37 +30,38 @@ class Container extends React.Component {
     return (
       <Wrapper>
         <div className="container">
-          <div className="filtre"></div>
+          <div className="accueil">
+            <div className="filtre"></div>
 
-          <div className="slogan">
-            <div className="king">KING BILLARD</div>
-            <div className="king">PLUS Q’UN JEU,</div>
-            <div style={{ marginBottom: 50 }} className="king">
-              UNE COMMUNAUTE.
+            <div className="slogan">
+              <div className="king">KING BILLARD</div>
+              <div className="king">PLUS Q’UN JEU,</div>
+              <div style={{ marginBottom: 50 }} className="king">
+                UNE COMMUNAUTE.
+              </div>
+              {/* <div className="hook"> */}
+              <NewsletterForm />
+              {/* </div> */}
             </div>
-            {/* <div className="hook"> */}
-            <NewsletterForm />
-            {/* </div> */}
-          </div>
 
-          <img src={vector} alt="vector" className="vector" />
-          <img src={vectorLeft} alt="vectorLeft" className="vectorLeft" />
-          <img src={vectorRight} alt="vectorRight" className="vectorRight" />
+            <img src={vector} alt="vector" className="vector" />
+            <img src={vectorLeft} alt="vectorLeft" className="vectorLeft" />
+            <img src={vectorRight} alt="vectorRight" className="vectorRight" />
 
-          <div className="containerimg">
-            <img className="image" src={homepage} alt="homepage" />
+            <div className="containerimg">
+              <img className="image" src={homepage} alt="homepage" />
+            </div>
           </div>
-          <div className="bloc">
+          <div className="sectionsBloc">
             <div className="title">QUI SOMMES-NOUS ?</div>
             <div className="sectionContainer">
               {data.map((element, index) => {
                 return <Section key={index} element={element} />;
               })}
             </div>
-
-            <div className="types">LES TYPES DE JEUX</div>
           </div>
-          <div>
+          <div className="gameTypes">
+            <div className="types">LES TYPES DE JEUX</div>
             <div className="gamesContainer">
               {content.map((element, index) => {
                 return (

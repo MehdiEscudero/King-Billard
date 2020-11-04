@@ -1,9 +1,8 @@
 .container {
-  height: 100%;
-  width: 100%;
   background: white;
   flex-direction: column;
   position: relative;
+  flex: 1;
 }
 
 .image {
@@ -121,4 +120,13 @@
 
 .sectionContainer {
   justify-content: space-around;
+}
+
+.sectionsBloc {
+  flex-direction: column;
+}
+
+.gameTypes {
+  flex-direction: column;
+  height: 100vh;
 }
