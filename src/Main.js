@@ -31,7 +31,13 @@ class Container extends React.Component {
       <Wrapper>
         <div className="container">
           <div className="accueil">
-            <div className="filtre"></div>
+            <div className="background">
+              <div className="containerimg">
+                <img className="image" src={homepage} alt="homepage" />
+              </div>
+
+              <div className="filtre"></div>
+            </div>
 
             <div className="slogan">
               <div className="king">KING BILLARD</div>
@@ -39,18 +45,13 @@ class Container extends React.Component {
               <div style={{ marginBottom: 50 }} className="king">
                 UNE COMMUNAUTE.
               </div>
-              {/* <div className="hook"> */}
+
               <NewsletterForm />
-              {/* </div> */}
             </div>
 
             <img src={vector} alt="vector" className="vector" />
             <img src={vectorLeft} alt="vectorLeft" className="vectorLeft" />
             <img src={vectorRight} alt="vectorRight" className="vectorRight" />
-
-            <div className="containerimg">
-              <img className="image" src={homepage} alt="homepage" />
-            </div>
           </div>
           <div className="sectionsBloc">
             <div className="title">QUI SOMMES-NOUS ?</div>
@@ -62,19 +63,21 @@ class Container extends React.Component {
           </div>
           <div className="gameTypes">
             <div className="types">LES TYPES DE JEUX</div>
-            <div className="gamesContainer">
-              {content.map((element, index) => {
-                return (
-                  <Menu
-                    key={index}
-                    element={element}
-                    handleVisibility={this.handleVisibility}
-                    visibility={this.state.elementVisible === element.id}
-                  />
-                );
-              })}
+            <div className="menuAndGames">
+              <div className="gamesContainer">
+                {content.map((element, index) => {
+                  return (
+                    <Menu
+                      key={index}
+                      element={element}
+                      handleVisibility={this.handleVisibility}
+                      visibility={this.state.elementVisible === element.id}
+                    />
+                  );
+                })}
+              </div>
+              <Games element={content[this.state.elementVisible]} />
             </div>
-            <Games element={content[this.state.elementVisible]} />
           </div>
         </div>
       </Wrapper>
