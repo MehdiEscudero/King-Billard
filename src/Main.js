@@ -34,9 +34,8 @@ class Container extends React.Component {
             <div className="background">
               <div className="containerimg">
                 <img className="image" src={homepage} alt="homepage" />
+                <div className="filtre"></div>
               </div>
-
-              <div className="filtre"></div>
             </div>
 
             <div className="slogan">
