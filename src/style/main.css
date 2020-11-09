@@ -42,8 +42,8 @@
   font-family: Libre Franklin;
   font-weight: 700;
   margin-left: 18vw;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 77px;
+  margin-bottom: 90px;
 }
 
 .types {
@@ -68,14 +68,6 @@
   margin-left: 10vw;
   margin-top: 10vh;
   margin-bottom: 20vh;
-}
-
-.hook {
-  position: absolute;
-  top: 81vh;
-  left: 27vw;
-  width: 50vw;
-  height: 8vh;
 }
 
 .vector {
