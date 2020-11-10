@@ -1,5 +1,6 @@
 import React from "react";
 import "./style/form.css";
+import ReactDOM from "react-dom";
 
 class Form extends React.Component {
   state = {
@@ -29,7 +30,7 @@ class Form extends React.Component {
     );
   }
   render() {
-    return (
+    return ReactDOM.createPortal(
       <div className="formWrapper">
         <div onClick={() => this.props.handleModal()} className="fond"></div>
         <div className="form">
@@ -74,7 +75,8 @@ class Form extends React.Component {
             Envoyer
           </button>
         </div>
-      </div>
+      </div>,
+      document.getElementById("modal")
     );
   }
 }
