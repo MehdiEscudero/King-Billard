@@ -1,10 +1,9 @@
 .news {
-  flex-direction: row;
-  width: 768px;
-  height: 65px;
+  width: 40vw;
+  height: 6vh;
   background-color: white;
   border-radius: 5px;
-  margin-left: 18vw;
+  margin-left: 28vw;
 }
 
 .news > input {
