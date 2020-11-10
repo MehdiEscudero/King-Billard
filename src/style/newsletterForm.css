@@ -8,7 +8,7 @@
 .news > input {
   margin: auto;
 }
-.news > input,
-.news > button {
+.news input,
+.news button {
   border: 0px solid black;
 }
