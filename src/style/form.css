@@ -45,7 +45,7 @@
 
 .formWrapper {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   height: 100vh;
   width: 100vw;
 }
