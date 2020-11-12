@@ -8,9 +8,9 @@ class Menu extends React.Component {
 
     return (
       <div className="gameLeft">
-        <button className="names" onClick={() => handleVisibility(id)}>
+        <div className="names" onClick={() => handleVisibility(id)}>
           {titre}
-        </button>
+        </div>
         <div className="games">{visibility ? description : null}</div>
       </div>
     );
