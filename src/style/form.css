@@ -1,5 +1,5 @@
 .form {
-  height: 85vh;
+  height: auto;
   width: 35vw;
   position: absolute;
   flex-direction: column;
@@ -11,10 +11,10 @@
 }
 
 .top {
-  height: 8vh;
   background-color: #5157ea;
   color: white;
   align-items: center;
+  padding: 20px;
 }
 
 .close {
@@ -27,20 +27,47 @@
 }
 
 .send {
-  border-radius: 20px;
   margin-bottom: 2vh;
-  width: 15vw;
-  margin-top: 2vh;
+  width: 70%;
+  margin-top: 4vh;
   align-self: center;
+  border-radius: 50px;
+  padding: 20px;
+  font-family: Libre Franklin;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+
+.disabled {
+  background: #e5e5e5;
+  opacity: 0.2;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.enable {
+  background-color: #5157ea;
+  color: white;
+}
+
+.sent {
+  background: #57e8ab;
+  color: white;
 }
 
 .details {
   flex-direction: column;
   color: grey;
   justify-content: space-between;
-  width: 80%;
   flex: 1;
-  margin-left: 3vw;
+  padding: 30px 33px 28px 39px;
+}
+
+.details div {
+  flex-direction: column;
 }
 
 .formWrapper {
@@ -64,6 +91,11 @@
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
+  margin-bottom: 20px;
 
   color: rgba(0, 0, 0, 0.5);
+}
+
+.input {
+  margin-bottom: 20px;
 }

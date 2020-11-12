@@ -1,14 +1,22 @@
 import React from "react";
 import "./style/form.css";
 import ReactDOM from "react-dom";
+import check from "./images/check.svg";
 
 class Form extends React.Component {
-  state = {
-    nom: null,
-    email: null,
-    phoneNumber: null,
-    message: null,
-  };
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      nom: "",
+      email: "",
+      phoneNumber: "",
+      message: "",
+      sent: false,
+    };
+
+    this.onSubmit = this.onSubmit.bind(this);
+  }
 
   handleChange(event, state) {
     this.setState({
@@ -16,22 +24,32 @@ class Form extends React.Component {
     });
   }
 
-  handleSubmit(event) {
-    console.log("ici");
-    console.log(this.state);
+  onSubmit() {
     alert(
-      this.state.nom +
-        "  " +
-        this.state.email +
-        "  " +
-        this.state.phoneNumber +
-        "  " +
-        this.state.message
+      `nom: ${this.state.nom} email: ${this.state.email} phone: ${this.state.phoneNumber} message: ${this.state.message}`
     );
+    this.setState({
+      sent: true,
+    });
+    setTimeout(() => {
+      this.setState({
+        nom: "",
+        email: "",
+        phoneNumber: "",
+        message: "",
+        sent: false,
+      });
+    }, 3000);
   }
+
   render() {
+    const isDisabled =
+      !this.state.nom ||
+      !this.state.email ||
+      !this.state.phoneNumber ||
+      !this.state.message;
     return ReactDOM.createPortal(
-      <div className="formWrapper">
+      <form method="dialog" onSubmit={this.onSubmit} className="formWrapper">
         <div onClick={() => this.props.handleModal()} className="fond"></div>
         <div className="form">
           <div className="top">
@@ -45,37 +63,59 @@ class Form extends React.Component {
             </button>
           </div>
           <div className="details">
-            <div className="label">Nom</div>
-            <input
-              onChange={(event) => this.handleChange(event, "nom")}
-            ></input>
-            <div className="label">Email</div>
-            <input
-              onChange={(event) => this.handleChange(event, "email")}
-            ></input>
-            <div className="label">Téléphone</div>
-            <input
-              onChange={(event) => this.handleChange(event, "phoneNumber")}
-            ></input>
-            <div className="label">Message</div>
-            <textarea
-              onChange={(event) => this.handleChange(event, "message")}
-            ></textarea>
+            <div>
+              <div className="label">Nom</div>
+              <input
+                value={this.state.nom}
+                className="input"
+                onChange={(event) => this.handleChange(event, "nom")}
+              ></input>
+            </div>
+            <div>
+              <div className="label">Email</div>
+              <input
+                value={this.state.email}
+                type="email"
+                className="input"
+                onChange={(event) => this.handleChange(event, "email")}
+              ></input>
+            </div>
+            <div>
+              <div className="label">Téléphone</div>
+              <input
+                value={this.state.phoneNumber}
+                type="tel"
+                pattern="[0-9]{10}"
+                className="input"
+                onChange={(event) => this.handleChange(event, "phoneNumber")}
+              ></input>
+            </div>
+            <div>
+              <div className="label">Message</div>
+              <textarea
+                value={this.state.message}
+                className="area"
+                onChange={(event) => this.handleChange(event, "message")}
+              ></textarea>
+            </div>
+
+            {this.state.sent ? (
+              <button className="send sent">
+                Envoyé
+                <img src={check} alt="check" />
+              </button>
+            ) : (
+              <button
+                type="submit"
+                disabled={isDisabled}
+                className={isDisabled ? "send disabled" : "send enable"}
+              >
+                Envoyer
+              </button>
+            )}
           </div>
-          <button
-            disabled={
-              !this.state.nom ||
-              !this.state.email ||
-              !this.state.phoneNumber ||
-              !this.state.message
-            }
-            onClick={(event) => this.handleSubmit(event)}
-            className="send"
-          >
-            Envoyer
-          </button>
         </div>
-      </div>,
+      </form>,
       document.getElementById("modal")
     );
   }
