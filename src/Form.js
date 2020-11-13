@@ -102,7 +102,7 @@ class Form extends React.Component {
             {this.state.sent ? (
               <button className="send sent">
                 Envoyé
-                <img src={check} alt="check" />
+                <img className="check" src={check} alt="check" />
               </button>
             ) : (
               <button
