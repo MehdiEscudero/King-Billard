@@ -13,9 +13,9 @@
 .top {
   background-color: #5157ea;
   color: white;
-  align-items: center;
   padding: 20px;
   font-family: Libre Franklin;
+  padding-left: 4vw;
 }
 
 .close {
