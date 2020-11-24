@@ -25,9 +25,9 @@ class Form extends React.Component {
   }
 
   onSubmit() {
-    alert(
-      `nom: ${this.state.nom} email: ${this.state.email} phone: ${this.state.phoneNumber} message: ${this.state.message}`
-    );
+    // alert(
+    //   `nom: ${this.state.nom} email: ${this.state.email} phone: ${this.state.phoneNumber} message: ${this.state.message}`
+    // );
     this.setState({
       sent: true,
     });
