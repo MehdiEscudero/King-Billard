@@ -66,9 +66,6 @@
   box-sizing: border-box;
   border-style: none;
   width: 25%;
-  margin-left: 10vw;
-  margin-top: 10vh;
-  margin-bottom: 20vh;
 }
 
 .vector {
@@ -127,6 +124,13 @@
 .sectionsBloc {
   flex-direction: column;
   height: 100vh;
+  background-color: #e5e5e5;
+}
+
+.menuAndGames {
+  justify-content: center;
+  margin-top: 10vh;
+  margin-bottom: 20vh;
 }
 
 .gameTypes {
