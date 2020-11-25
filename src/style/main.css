@@ -94,6 +94,7 @@
   font-weight: 700;
   font-family: Libre Franklin;
   font-size: 12vh;
+  line-height: 13vh;
 }
 
 .bloc {
@@ -124,7 +125,7 @@
 .sectionsBloc {
   flex-direction: column;
   height: 100vh;
-  background-color: #e5e5e5;
+  background: rgba(196, 196, 196, 0.1);
 }
 
 .menuAndGames {
