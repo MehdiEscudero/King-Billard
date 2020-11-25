@@ -19,11 +19,16 @@ class Wrapper extends React.Component {
       modal: !this.state.modal,
     });
   }
+
+  onScroll(evt) {
+    console.log(evt.nativeEvent.target.scrollTop);
+  }
+
   render() {
     return (
       <div className="wrapperContainer">
         {this.state.modal ? <Form handleModal={this.handleModal} /> : null}
-        <div className="wrapper">
+        <div className="wrapper" onScroll={this.onScroll}>
           <Header handleModal={this.handleModal} />
           {this.props.children}
           <Footer handleModal={this.handleModal} />
