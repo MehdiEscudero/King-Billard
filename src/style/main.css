@@ -42,7 +42,7 @@
   font-size: 8vh;
   font-family: Libre Franklin;
   font-weight: 700;
-  margin-left: 18vw;
+  margin-left: 14vw;
   margin-top: 77px;
   margin-bottom: 90px;
 }
@@ -51,7 +51,7 @@
   font-size: 8vh;
   font-weight: 700;
   justify-content: center;
-  margin-left: 12vw;
+  margin-left: 11vw;
   margin-top: 10vh;
   font-family: Libre Franklin;
 }
@@ -124,7 +124,7 @@
 
 .sectionsBloc {
   flex-direction: column;
-  height: 100vh;
+  height: 92vh;
   background: rgba(196, 196, 196, 0.1);
 }
 

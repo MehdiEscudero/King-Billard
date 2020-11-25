@@ -6,8 +6,8 @@ class Section extends React.Component {
   render() {
     return (
       <Link to={this.props.element.path} className="card">
-        <img className="img-card" src={this.props.element.img} alt="corner" />
         <div className="section-card">
+          <img className="img-card" src={this.props.element.img} alt="corner" />
           <div className="title-card">{this.props.element.subtitle}</div>
           <div className="content-card">{this.props.element.article} </div>
         </div>
