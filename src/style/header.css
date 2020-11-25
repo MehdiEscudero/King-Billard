@@ -1,5 +1,17 @@
-.header {
+.header-transparent {
   background-color: transparent;
+  width: 100vw;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+  padding: 15px 0px;
+  z-index: 2;
+  position: absolute;
+  padding-top: 20px;
+}
+
+.header-black {
+  background-color: black;
   width: 100vw;
   align-items: center;
   color: white;

@@ -10,8 +10,10 @@ class Wrapper extends React.Component {
 
     this.state = {
       modal: false,
+      header: false,
     };
     this.handleModal = this.handleModal.bind(this);
+    this.onScroll = this.onScroll.bind(this);
   }
 
   handleModal() {
@@ -22,6 +24,11 @@ class Wrapper extends React.Component {
 
   onScroll(evt) {
     console.log(evt.nativeEvent.target.scrollTop);
+    if (evt.nativeEvent.target.scrollTop > 763) {
+      this.setState({ header: true });
+    } else {
+      this.setState({ header: false });
+    }
   }
 
   render() {
@@ -29,7 +36,7 @@ class Wrapper extends React.Component {
       <div className="wrapperContainer">
         {this.state.modal ? <Form handleModal={this.handleModal} /> : null}
         <div className="wrapper" onScroll={this.onScroll}>
-          <Header handleModal={this.handleModal} />
+          <Header handleModal={this.handleModal} header={this.state.header} />
           {this.props.children}
           <Footer handleModal={this.handleModal} />
         </div>

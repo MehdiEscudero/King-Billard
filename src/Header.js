@@ -6,7 +6,9 @@ import { Link } from "react-router-dom";
 class Header extends React.Component {
   render() {
     return (
-      <div className="header">
+      <div
+        className={this.props.header ? "header-black" : "header-transparent"}
+      >
         <Link to="/">
           <div className="identity">
             <img src={logo} alt="logo" className="logo zindex" />
