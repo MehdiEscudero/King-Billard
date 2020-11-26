@@ -24,7 +24,11 @@ class Wrapper extends React.Component {
 
   onScroll(evt) {
     console.log(evt.nativeEvent.target.scrollTop);
-    if (evt.nativeEvent.target.scrollTop > 763) {
+    console.log(evt.nativeEvent);
+
+    if (
+      evt.nativeEvent.target.scrollTop > evt.nativeEvent.target.clientHeight
+    ) {
       this.setState({ header: true });
     } else {
       this.setState({ header: false });
