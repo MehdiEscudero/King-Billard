@@ -1,16 +1,14 @@
 import React from "react";
 import "./style/main.css";
-import homepage from "./images/homepage.svg";
 import Section from "./Section";
 import data from "./billards.json";
 import Games from "./Games";
 import Menu from "./Menu";
 import content from "./games.json";
 import vector from "./images/vector.svg";
-import vectorLeft from "./images/vectorLeft.svg";
-import vectorRight from "./images/vectorRight.svg";
 import Wrapper from "./Wrapper";
 import NewsletterForm from "./NewsletterForm";
+import Carousel from "./Carousel";
 
 class Container extends React.Component {
   constructor(props) {
@@ -33,7 +31,8 @@ class Container extends React.Component {
           <div className="accueil">
             <div className="background">
               <div className="containerimg">
-                <img className="image" src={homepage} alt="homepage" />
+                {/* <img className="image" src={homepage} alt="homepage" /> */}
+                <Carousel className="image" />
                 <div className="filtre"></div>
               </div>
             </div>
@@ -49,8 +48,6 @@ class Container extends React.Component {
             </div>
 
             <img src={vector} alt="vector" className="vector" />
-            <img src={vectorLeft} alt="vectorLeft" className="vectorLeft" />
-            <img src={vectorRight} alt="vectorRight" className="vectorRight" />
           </div>
           <div className="sectionsBloc">
             <div className="title">QUI SOMMES-NOUS ?</div>
