@@ -27,7 +27,8 @@ class Wrapper extends React.Component {
     console.log(evt.nativeEvent);
 
     if (
-      evt.nativeEvent.target.scrollTop > evt.nativeEvent.target.clientHeight
+      evt.nativeEvent.target.scrollTop >
+      evt.nativeEvent.target.clientHeight - 80
     ) {
       this.setState({ header: true });
     } else {

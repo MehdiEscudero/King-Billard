@@ -7,7 +7,11 @@ class Header extends React.Component {
   render() {
     return (
       <div
-        className={this.props.header ? "header-black" : "header-transparent"}
+        className={
+          this.props.header
+            ? "header header-black"
+            : "header header-transparent"
+        }
       >
         <Link to="/">
           <div className="identity">
