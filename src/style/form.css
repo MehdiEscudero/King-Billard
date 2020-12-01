@@ -8,6 +8,7 @@
   left: 35vw;
   top: 5vh;
   z-index: 2;
+  border-radius: 4px;
 }
 
 .top {
@@ -16,6 +17,7 @@
   padding: 20px;
   font-family: Libre Franklin;
   padding-left: 4vw;
+  border-radius: 4px;
 }
 
 .close {
