@@ -6,18 +6,36 @@
   z-index: 2;
   position: absolute;
   padding: 20px 0px;
-  transition: opacity 3s;
 }
 
-.header-transparent {
-  background-color: transparent;
+.header_background {
+  position: absolute;
+  top: 0;
+  bottom: O;
+  right: 0;
+  left: 0;
+  background-color: black;
+}
+
+.header-black .header_background {
   opacity: 1;
 }
 
+.header-transparent .header_background {
+  opacity: 0;
+}
+
+.header {
+  transition: transfrom 3s;
+  transition: translateY(-100%);
+}
+
 .header-black {
-  background-color: black;
-  transition: transform 2s ease;
-  transform: translateY(2vh);
+  transition: translateY(0);
+}
+
+.container_header {
+  z-index: 2;
 }
 
 .logo {

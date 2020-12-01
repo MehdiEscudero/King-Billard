@@ -13,21 +13,24 @@ class Header extends React.Component {
             : "header header-transparent"
         }
       >
-        <Link to="/">
-          <div className="identity">
-            <img src={logo} alt="logo" className="logo zindex" />
-            <div className="name">KING BILLARD.</div>
-          </div>
-        </Link>
-        <div className="onglet zindex">
+        <div className="header_background"></div>
+        <div className="container_header">
           <Link to="/">
-            <div className="tab">ACCUEIL</div>
+            <div className="identity">
+              <img src={logo} alt="logo" className="logo zindex" />
+              <div className="name">KING BILLARD.</div>
+            </div>
           </Link>
-          <div className="tab">QUI SOMMES-NOUS ?</div>
-          <div className="tab">LES TYPES DE JEUX</div>
-          <button onClick={() => this.props.handleModal()} className="button">
-            CONTACT
-          </button>
+          <div className="onglet zindex">
+            <Link to="/">
+              <div className="tab">ACCUEIL</div>
+            </Link>
+            <div className="tab">QUI SOMMES-NOUS ?</div>
+            <div className="tab">LES TYPES DE JEUX</div>
+            <button onClick={() => this.props.handleModal()} className="button">
+              CONTACT
+            </button>
+          </div>
         </div>
       </div>
     );
