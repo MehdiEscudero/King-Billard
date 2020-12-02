@@ -6,6 +6,8 @@
   z-index: 2;
   position: absolute;
   padding: 20px 0px;
+  transition: transfrom 3s;
+  transition: translateY(-100%);
 }
 
 .header_background {
@@ -23,11 +25,6 @@
 
 .header-transparent .header_background {
   opacity: 0;
-}
-
-.header {
-  transition: transfrom 3s;
-  transition: translateY(-100%);
 }
 
 .header-black {

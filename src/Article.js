@@ -5,7 +5,7 @@ import Wrapper from "./Wrapper";
 class Corner extends React.Component {
   render() {
     return (
-      <Wrapper>
+      <Wrapper article={true}>
         <div className="fullArticle">
           <div className="content">
             <img

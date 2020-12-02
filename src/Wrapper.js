@@ -23,8 +23,8 @@ class Wrapper extends React.Component {
   }
 
   onScroll(evt) {
-    console.log(evt.nativeEvent.target.scrollTop);
-    console.log(evt.nativeEvent);
+    // console.log(evt.nativeEvent.target.scrollTop);
+    // console.log(evt.nativeEvent);
 
     if (
       evt.nativeEvent.target.scrollTop >
@@ -41,7 +41,11 @@ class Wrapper extends React.Component {
       <div className="wrapperContainer">
         {this.state.modal ? <Form handleModal={this.handleModal} /> : null}
         <div className="wrapper" onScroll={this.onScroll}>
-          <Header handleModal={this.handleModal} header={this.state.header} />
+          <Header
+            article={this.props.article}
+            handleModal={this.handleModal}
+            header={this.state.header}
+          />
           {this.props.children}
           <Footer handleModal={this.handleModal} />
         </div>

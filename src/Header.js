@@ -5,14 +5,11 @@ import { Link } from "react-router-dom";
 
 class Header extends React.Component {
   render() {
+    let classe = "header";
+    classe = this.props.header ? "header-black" : " header-transparent";
+    classe = this.props.article ? "header_article" : "";
     return (
-      <div
-        className={
-          this.props.header
-            ? "header header-black"
-            : "header header-transparent"
-        }
-      >
+      <div className={classe}>
         <div className="header_background"></div>
         <div className="container_header">
           <Link to="/">
