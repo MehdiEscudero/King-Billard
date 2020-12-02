@@ -6,7 +6,7 @@
   z-index: 2;
   position: absolute;
   padding: 20px 0px;
-  transition: transform 3s;
+  transition: transform 2s;
   transform: translateY(-100%);
 }
 
