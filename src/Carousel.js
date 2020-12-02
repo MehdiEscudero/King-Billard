@@ -12,6 +12,7 @@ import imagesList from "./carousel.json";
 import vectorLeft from "./images/vectorLeft.svg";
 import vectorRight from "./images/vectorRight.svg";
 import "./style/main.css";
+import "./style/carousel.css";
 
 export default class extends React.Component {
   render() {
